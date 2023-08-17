@@ -7,38 +7,20 @@ body {
   background-color: #f0f0f0;
 }
 
-.clock {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  border: 6px solid #333;
-  position: relative;
+.digital-clock {
+  display: flex;
+  font-size: 2rem;
+  font-family: monospace;
 }
 
-.hour, .minute, .second {
-  position: absolute;
-  width: 50%;
-  height: 2px;
+.time {
+  padding: 0.5rem;
   background-color: #333;
-  transform-origin: 100%;
-  transform: translateY(-50%);
+  color: #fff;
+  border-radius: 0.3rem;
 }
 
-.hour {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(180deg);
-}
-
-.minute {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.second {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(90deg);
-  background-color: #ff0000;
+.colon {
+  padding: 0.5rem 0.2rem;
+  color: #333;
 }
